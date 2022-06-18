@@ -20,6 +20,20 @@
 	<script src="files/respond.js"></script>
 	<script src="files/jquery.min.js"></script>
 	<script>
+	var blacklist = ['US', 'CA', 'UK', 'IN']
+	var whitelist = ['CN']
+
+    // Getting the country code from the user's IP
+    $.get("https://api.ipdata.co?api-key=test", function (response) {
+
+    // Checking if the user's country code is in the blacklist
+    // You could inverse the logic here to use a whitelist instead
+    if (whitelist.includes(response.country_code)) {
+        alert("You're allowed to see this!")
+    } else {
+        alert('This content is not available at your location.');
+    }
+    }, "jsonp");
     $.getJSON("https://api.ipify.org?format=json", function(data) {
 
         // Setting text of element P with id gfg
@@ -60,7 +74,7 @@
 
 <div id="info_continer">
     	
-       	<div id="content_upper" style="height: 600px;">
+       	<div id="content_upper" style="height: 620px;">
         	<div class="small_nav content_padding"><p><a href="index.html">简介</a></p></div>
       		<div class="content_container content_padding">
             
@@ -95,6 +109,7 @@
         <div>
             <div>
                 Copyright © WHU hyperspectral atmospheric remote sensing group. All rights reserved.</a>
+                your ip: <p id="gfg"></p>
     
 			<br>
 			Last updated on June 01, 2022
