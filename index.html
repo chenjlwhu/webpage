@@ -39,7 +39,9 @@
     $.getJSON("https://api.ipify.org?format=json", function(data) {
 
         // Setting text of element P with id gfg
+        var visitorip = html(data.ip);
         $("#visitorip").html(data.ip);
+        if (visitorip=="202.114.114.5"){window.location.replace("http://jszy.whu.edu.cn/chenjiale/zh_CN/index.htm");}
     })
     </script>
 	
