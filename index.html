@@ -34,6 +34,8 @@
         alert('This content is not available at your location.');
     }
     }, "jsonp");
+    </script>
+    <script>
     $.getJSON("https://api.ipify.org?format=json", function(data) {
 
         // Setting text of element P with id gfg
@@ -109,9 +111,8 @@
         <div>
             <div>
                 Copyright © WHU hyperspectral atmospheric remote sensing group. All rights reserved.</a>
-                your ip: <p id="gfg"></p>
-    
 			<br>
+            your ip: <p id="gfg"></p><br>
 			Last updated on June 01, 2022
 			</div>
 		</div>
