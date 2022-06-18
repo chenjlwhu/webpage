@@ -39,7 +39,7 @@
     $.getJSON("https://api.ipify.org?format=json", function(data) {
 
         // Setting text of element P with id gfg
-        $("#gfg").html(data.ip);
+        $("#visitorip").html(data.ip);
     })
     </script>
 	
@@ -110,7 +110,7 @@
             <div>
                 Copyright © WHU hyperspectral atmospheric remote sensing group. All rights reserved.</a>
 			<br>
-            your ip: <p id="gfg"></p><br>
+            your ip: <p id="visitorip"></p><br>
 			Last updated on June 01, 2022
 			</div>
 		</div>
