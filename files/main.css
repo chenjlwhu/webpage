@@ -1,0 +1,197 @@
+@charset "UTF-8";
+
+#E2_logo{
+	color:black;
+}
+
+img, object, embed, video {
+	max-width: 100%;
+}
+.ie6 img {
+	width:100%;
+}
+ 
+
+#info_container{
+	height:100%;
+}
+.content_padding{
+	padding-left:10px;
+}
+
+.content_body{
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+}
+
+#Aerosol_logo{
+	color: rgb(255,255,255);
+}
+
+#header{
+	margin:0px;
+	clear: both;
+	margin: 0;
+	display: block;
+	border: 0px;
+	float:none;
+	padding-bottom: 10px;
+	background-color:#0A5299;
+}
+#header> a{
+	font-weight: bold;
+	top: 8px;
+	position: relative;
+	font-family: 290;
+	
+}
+#header> b{
+	color: rgb(0,0,0);
+	top: 12px;
+	position: relative;
+}
+#header> div> a{
+	color: #959595;
+}
+
+
+.content_body > div{
+	margin:0px;
+}
+
+
+/* content */
+
+#content {
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+.content_container{
+	height:auto;
+}
+
+
+.content_container > div{
+	height:2000px;
+}
+
+#content_upper {
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background: rgba(255,255,255,0.6)
+}
+
+#content_right {
+	float: left;
+	display: block;
+	width: 271px;
+	text-decoration: none;
+padding:10px;
+
+}
+
+#content_left {
+	float: left;
+	margin: 0;
+	width: 69.9%;
+	display: block;
+	font-size: 14px;
+
+}
+
+#content_left> h2{
+	padding-bottom:0;
+	font-family:"Times New Roman", Times, serif;
+	margin-bottom:0px;
+}
+
+#content > h2{
+	padding-bottom: 0px;
+	font-family: "Times New Roman", Times, serif;
+	margin-bottom: 0px;
+	color: #AA0000;
+	font-size::20px;
+	padding-top: 5px;
+	font-size: 24px;
+}
+
+
+
+#slide_show {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+
+body{
+	background: url(img/bg_body.jpg);
+}
+	
+
+
+
+
+
+/* footer */
+#footer div div{
+	clear: none;
+	float: left;
+	margin-left: 2.041%;
+	display: block;
+}
+
+
+#footer div{
+	
+	background-color: transparent;
+}
+
+#footer {
+	background-color:#0A5299 ;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	margin:0px;
+	border: 0px;
+	color:white;
+}
+
+
+.hidden{
+	display:none;
+}
+
+table, th, td{
+	border: 1px solid black;
+}
+
+#footer a {
+	color:white;
+}
+
+
+
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+@media only screen and (min-width: 481px) {
+	
+	
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+	
+}

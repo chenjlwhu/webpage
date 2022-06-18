@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+.nav{
+	background-color:rgba(152, 21,21, 1);
+}
+ 
+#nav{
+	background-color:rgba(255,255,255,0.6);
+}
+
+
+
+.header_element{
+	display:block;
+	font-size:1.9em;
+}
+
+.header_element > img{
+	width: 15%;
+}
+
+#Aerosol_logo{
+	font-size: 3em;
+	font:"Times New Roman", Times, serif;
+	font-family:"Times New Roman", Times, serif;
+}
+	
+	
+
+/* header banner*/
+
+
+nav {
+	display: block;
+	text-align: right;
+	z-index: 10;
+	position:relative;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.nav a {
+	display: block;
+	text-decoration: none;
+	padding: 0.3em 1.2em;
+	font-size: 1.3em;
+	letter-spacing: 0px;;
+	position: relative;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	color:rgb(255,255,255);
+}
+.nav {
+	vertical-align: top;
+	display: inline-block;
+	box-shadow: 1px -1px -1px 1px #000, -1px 1px -1px 1px #fff, 0 0 6px 3px #fff;
+}
+.nav li {
+	position: relative;
+}
+.nav > li {
+	float: left;
+}
+.nav > li > a {
+	margin-bottom: 1px;
+}
+.nav li:hover > a {
+	color: rgba(228,238,252,0.87);
+}
+
+.nav > li:last-child {
+	margin-right: 0;
+}
+.nav li li a {
+	margin-top: 1px;
+	text-align: left;
+}
+
+.nav li a:first-child:nth-last-child(2):before { 
+	 content:""; 
+	 position: absolute; 
+	 height:0; 
+	 width: 0; 
+	 border: 5px solid transparent; 
+	 top: 50% ;
+	 right:5px;  
+}
+/* submenu positioning*/
+.nav ul {
+	position: absolute;
+	white-space: nowrap;
+	z-index: 5;
+	left: -99999em;
+	background-color: rgba(152, 21,21, 1);
+}
+.nav > li:hover > ul {
+	left: auto;
+	padding-top: 5px;
+	min-width: 100%;
+}
+.nav > li li ul {
+	border-left: 1px solid #fff;
+}
+.nav > li li:hover > ul {
+	left: 100%;
+	top: -1px;
+}
+
+
+/* arrow hover styling */
+.nav > li > a:first-child:nth-last-child(2):before {
+	border-top-color: #fff;
+}
+.nav > li:hover > a:first-child:nth-last-child(2):before {
+	border: 5px solid transparent;
+	border-bottom-color: #fff;
+	margin-top: -5px
+}
+.nav li li > a:first-child:nth-last-child(2):before {
+	border-left-color: #fff;
+	margin-top: -5px
+}
+.nav li li:hover > a:first-child:nth-last-child(2):before {
+	border: 5px solid transparent;
+	border-right-color: #fff;
+	right: 10px;
+}
+.header_element {
+	display: block;
+	font-size: 1.3em;
+}
+.header_element > img {
+	width: 8em;
+}
+
+
+.small_nav{
+	
+}
+
+
+.small_nav p{
+	font-size:14px;
+}
+
+.small_nav a{
+	color:rgb(204,0,0);
+	font-weight:bold;
+		font-size:14px;
+}
+.small_nav a:hover{
+	color: rgb(15,15,15);
+	;
+	font-size: 14px;
+	font-family: sans-serif;
+}
