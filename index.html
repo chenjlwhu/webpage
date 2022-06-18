@@ -7,6 +7,7 @@
 	<meta name="description" content="hyperspectral atmospheric remote sensing group">
 	<meta name="keywords" content="hyperspectral atmospheric remote sensing">
 	<meta name="robots" content="noindex">
+<!--     <meta http-equiv="Refresh" content="0; url='http://jszy.whu.edu.cn/chenjiale/zh_CN/index.htm'" /> -->
 	
 	<link href="files/boilerplate.css" rel="stylesheet" type="text/css">
 	<link href="files/main.css" rel="stylesheet" type="text/css">
@@ -19,7 +20,38 @@
 	<script src="files/responsiveslides.js"></script>
 	<script src="files/respond.js"></script>
 	<script src="files/jquery.min.js"></script>
-	<script>
+
+    <!--<script>
+	var defaultCountry = ‘US’;
+    var defaultSite = ‘https://google.com';
+    var otherSite = ‘https://google.co.uk';
+    fetch('https://ipapi.co/country/')
+    .then(response => {
+    if (response.ok) {
+        return response.text();
+    } else {
+        throw new Error(‘HTTP Error ‘ + response.status);
+    }
+    })
+    .then(country => {
+    if (country == defaultCountry) {
+        // No action needed - already on the default site
+        console.log(‘Already on default site’);
+    } else {
+        // Redirect rest of the world
+        console.log(‘Redirecting to country specific website’);
+        window.location = otherSite;
+    }
+    })
+    .catch(function(error) {
+    // Network error
+    // Script blocked by browser extension
+    // 429 error (too many requests)
+    console.log(error);
+    });
+    </script>-->
+
+	<!--<script>
 	var blacklist = ['US', 'CA', 'UK', 'IN']
 	var whitelist = ['CN']
 
@@ -34,23 +66,20 @@
         window.location.replace("http://jszy.whu.edu.cn/chenjiale/zh_CN/index.htm");
     }
     }, "jsonp");
-    </script>
+    </script>-->
     <script>
-    $.getJSON("https://api.ipify.org?format=json", function(data) {
-
-        // Setting text of element P with id gfg
-        var visitorip = html(data.ip);
-        $("#visitorip").html(data.ip);
-        if (visitorip=="202.114.114.5"){window.location.replace("http://jszy.whu.edu.cn/chenjiale/zh_CN/index.htm");}
+    $.get('https://ipapi.co/country/', function(data){
+    $("#visitorip").html(data);
     })
     </script>
+
 	
 </head>
 <body>
 <div class="content_body">
     <div id="header" class="content_padding">
 <!--         <a id="logo" class="header_element" href="index.html"><font color="black" size=48><i><img src="files/logo.png" style="width:270px">高光谱大气遥感课题组</i></font> </a> -->
-        <a><font color="black" size=48>高光谱大气遥感课题组</font> </a>
+        <a href="index.html"><font color="black" size=48>高光谱大气遥感课题组</font> </a>
     </div>
     <div id="nav">
         <nav>
@@ -112,7 +141,7 @@
             <div>
                 Copyright © WHU hyperspectral atmospheric remote sensing group. All rights reserved.</a>
 			<br>
-            your ip: <p id="visitorip"></p><br>
+			your country: <p id="visitorip"></p><br>
 			Last updated on June 01, 2022
 			</div>
 		</div>
